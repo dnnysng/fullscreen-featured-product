@@ -1,0 +1,55 @@
+.bg-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-electric-lines-left,
+.bg-electric-lines-right,
+.bg-controller,
+.bg-blob-left,
+.bg-blob-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-electric-lines-left {
+    background: url('./images/electric-lines-left.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.bg-electric-lines-right {
+    background: url('./images/electric-lines-right.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.bg-controller {
+    background: url('./images/angled-controller.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-blend-mode: soft-light;
+}
+
+.bg-blob-left {
+    background: url('./images/blob-left.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left top;
+    opacity: 50%;
+}
+
+.bg-blob-right {
+    background: url('./images/blob-right.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    opacity: 70%;
+}

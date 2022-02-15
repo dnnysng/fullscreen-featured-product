@@ -1,0 +1,138 @@
+.product-card-wrapper {
+    position: absolute;
+    background: #455c6450;
+    height: max-content;
+    width: 800px;
+    z-index: 1;
+    backdrop-filter: blur(30px);
+    color: white;
+    padding: 2rem 5rem 2rem 22rem;
+    border-radius: 50px;
+    margin-left: 10rem;
+}
+
+.color-selection-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.product-image {
+    position: absolute;
+    width: 100%;
+    left: -20rem;
+    top: -5.5rem;
+    z-index: -1;
+    filter: drop-shadow(0px 0px 30px #ffffff55);
+}
+
+.product-title {
+    font-size: 2rem;
+}
+
+.product-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.color-selection-label {
+    margin-right: 10px;
+}
+
+.colors-wrapper {
+    display: flex;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 3px 5px 0px 5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.aqua {
+    background: aqua;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.color:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.buy-now-button {
+    background: #dc4151;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.buy-now-button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+@media (max-width: 1020px) {
+    .product-card-wrapper {
+        position: absolute;
+        max-width: 400px;
+        padding: 2rem;
+        margin: 2rem;
+        text-align: left;
+    }
+    .product-info-wrapper {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .color-selection-wrapper {
+        padding: 0;
+        justify-content: center;
+    }
+    .product-image {
+        position: static;
+        min-width: 400px;
+        height: 200px;
+        margin-bottom: -80px;
+        object-fit: cover;
+        transform: rotate(-24deg);
+    }
+}
+
+@media (max-width: 510px) {
+    .product-card-wrapper {
+        position: static;
+    }
+}
+
+@media (max-width: 400px) {
+    .product-card-wrapper {
+        border-radius: 0px;
+    }
+    .color-selection-wrapper {
+        flex-direction: column;
+    }
+    .color {
+        width: 40px;
+        height: 40px;
+        margin: 0 0.7rem;
+    }
+    .buy-now-button {
+        margin-top: 2rem;
+        padding: 1.5rem 4rem;
+    }
+}
